@@ -1,6 +1,6 @@
 'use strict';
-
-function guessingGame() {
+//function guessingGame(){
+function guessingOne() {
   let siteVisitor = prompt('Hello. What is your name?');
 
   alert(`Welcome, ${siteVisitor}.\n\nTime for a fun facts quiz!\n\nPlease answer the following questions with Yes [Y/Yes] or No [N/No].`);
@@ -17,7 +17,10 @@ function guessingGame() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
+}
+guessingOne();
 
+function guessingTwo() {
   let questionTwo = prompt('Was I in the Army?').toLowerCase();
 
   if (questionTwo === 'no' || questionTwo === 'n') {
@@ -30,7 +33,10 @@ function guessingGame() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
+}
+guessingTwo();
 
+function guessingThree() {
   let questionThree = prompt('Do I ride dirtbikes and motorclyes?').toLowerCase();
 
   if (questionThree === 'yes' || questionThree === 'y') {
@@ -43,7 +49,10 @@ function guessingGame() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
+}
+guessingThree();
 
+function guessingFour() {
   let questionFour = prompt('Have I put Vince McMahon in a headlock before?').toLowerCase();
 
   if (questionFour === 'yes' || questionFour === 'y') {
@@ -56,7 +65,10 @@ function guessingGame() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
+}
+guessingFour();
 
+function guessingFive() {
   let questionFive = prompt('Do I have a lab full of minions under my house?').toLowerCase();
 
   if (questionFive === 'yes' || questionFive === 'y') {
@@ -70,6 +82,10 @@ function guessingGame() {
     alert('That was an invalid response!');
   }
   let myNumber = 30;
+}
+guessingFive();
+
+function guessingSix() {
 
   for (let i = 0; i < 4; i++) {
     let questionSix = parseInt(prompt('Guess a number I am thinking of'));
@@ -86,10 +102,11 @@ function guessingGame() {
       alert('To low');
     }
   }
+}
+guessingSix();
 
+function guessingSeven() {
   let favColors = ['purple', 'black', 'grey', 'blue'];
-
-
   for (let i = 0; i < 6; i++) {
     let questionSeven = prompt('Guess my favorite color');
 
@@ -111,4 +128,5 @@ function guessingGame() {
 
   }
 }
-guessingGame();
+guessingSeven();
+// } guessingGame();
