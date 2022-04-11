@@ -1,5 +1,7 @@
 'use strict';
 
+let score = 0;
+
 function guessingGame() {
   let siteVisitor = prompt('Hello. What is your name?');
 
@@ -12,6 +14,8 @@ function guessingGame() {
     alert('Correct!');
   } else if (questionOne === 'no' || questionOne === 'n') {
     // console.log('Incorrect!');
+    score++;
+
     alert('Incorrect');
   } else {
     // console.log('That was an invalid response!')
@@ -21,11 +25,12 @@ function guessingGame() {
   let questionTwo = prompt('Was I in the Army?').toLowerCase();
 
   if (questionTwo === 'no' || questionTwo === 'n') {
-    // console.log('Correct!');
-    alert('Correct!');
-  } else if (questionTwo === 'yes' || questionTwo === 'y') {
     // console.log('Incorrect!');
     alert('Incorrect!');
+  } else if (questionTwo === 'yes' || questionTwo === 'y') {
+    // console.log('Correct!');
+    score++;
+    alert('Correct!');
   } else {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
@@ -35,6 +40,7 @@ function guessingGame() {
 
   if (questionThree === 'yes' || questionThree === 'y') {
     // console.log('Correct!');
+    score++;
     alert('Correct!');
   } else if (questionThree === 'no' || questionThree === 'n') {
     // console.log('Incorrect!');
@@ -48,6 +54,7 @@ function guessingGame() {
 
   if (questionFour === 'yes' || questionFour === 'y') {
     // console.log('Correct!');
+    score++;
     alert('Correct!');
   } else if (questionFour === 'no' || questionFour === 'n') {
     // console.log('Incorrect!');
@@ -61,6 +68,7 @@ function guessingGame() {
 
   if (questionFive === 'yes' || questionFive === 'y') {
     // console.log('Incorrect!');
+    score++;
     alert('Incorrect!');
   } else if (questionFive === 'no' || questionFive === 'n') {
     // console.log('Correct!');
@@ -69,21 +77,22 @@ function guessingGame() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
-  let myNumber = 30;
+  let myNumber = 14;
 
   for (let i = 0; i < 4; i++) {
     let questionSix = parseInt(prompt('Guess a number I am thinking of'));
 
     if (questionSix === myNumber) {
       // console.log('Incorrect!');
+      score++;
       alert('You are correct!');
       i = 4;
     } else if (questionSix > myNumber) {
 
-      alert('To high');
+      alert('Too high');
     } else if (questionSix < myNumber) {
 
-      alert('To low');
+      alert('Too low');
     }
   }
 
@@ -96,8 +105,9 @@ function guessingGame() {
     for (let j = 0; j < favColors.length; j++) {
 
       if (questionSeven === favColors[j]) {
-        alert('Love these colors');
+        alert('Great!');
         i = 6;
+        score++;
         break;
 
 
@@ -106,9 +116,13 @@ function guessingGame() {
 
 
 
-      alert(`Here are all my fav colors: ${favColors}`);
+
     }
 
   }
+  alert(`Here are all my favorite colors: ${favColors}`);
 }
 guessingGame();
+
+score(alert(`You got ${score} correct`));
+

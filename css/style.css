@@ -1,158 +1,82 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 5px;
-    padding: 5px;
+/* * {
+    padding: 10px 5px;
     border: 0;
-    font-size: 100%;
+    font-size: 125px;
+    font-family: Arial;
+    background-color: transparent;
+    color: #0d0d0d;
     font: inherit;
-    vertical-align: top;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    color: gray
+    text-align: center;
+} */
+h1 {
+    font-family: Arial;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+    text-decoration: underline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+h2 {
+    font-family: Arial;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+    text-decoration: underline;
 }
 
-html,
+h3 {
+    font-family: Arial;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+img {
+    float: center;
+    height: 10%;
+    width: 17%;
+    object-fit: contain;
+
+}
+
 body {
-    display: flex;
-    align-items: top;
-    justify-content: left;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    background-color: white;
+    font-size: 30px;
+    color: rgb(1, 1, 91);
+    padding: 5%;
+    text-align: left;
+
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
+#Employment {
+    color: rgb(40, 5, 121);
+    padding: 10px;
+    float: right;
 }
 
-ol,
-ul {
-    list-style: none;
+/* #Picture {
+    
+
+} */
+
+#Fav {
+    float: left;
+    color: rgb(40, 5, 121);
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-button {
-    padding: 7px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+/* #Containerid{
+    column-width: 20em;
+    column-rule: 0px solid rgb(75, 70, 74);
+   
+} */
