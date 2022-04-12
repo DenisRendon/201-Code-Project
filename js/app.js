@@ -1,13 +1,8 @@
 'use strict';
-<<<<<<< HEAD
 
 let score = 0;
 
 function guessingGame() {
-=======
-//function guessingGame(){
-function guessingOne() {
->>>>>>> 1b0f461a0fea6bcf7045ed8dd49556a88f59f12b
   let siteVisitor = prompt('Hello. What is your name?');
 
   alert(`Welcome, ${siteVisitor}.\n\nTime for a fun facts quiz!\n\nPlease answer the following questions with Yes [Y/Yes] or No [N/No].`);
@@ -27,7 +22,7 @@ function guessingOne() {
     alert('That was an invalid response!');
   }
 }
-guessingOne();
+// guessingOne();
 
 function guessingTwo() {
   let questionTwo = prompt('Was I in the Army?').toLowerCase();
@@ -94,15 +89,7 @@ function guessingFive() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
-<<<<<<< HEAD
   let myNumber = 14;
-=======
-  let myNumber = 30;
-}
-guessingFive();
-
-function guessingSix() {
->>>>>>> 1b0f461a0fea6bcf7045ed8dd49556a88f59f12b
 
   for (let i = 0; i < 4; i++) {
     let questionSix = parseInt(prompt('Guess a number I am thinking of'));
@@ -148,12 +135,7 @@ function guessingSeven() {
   }
   alert(`Here are all my favorite colors: ${favColors}`);
 }
-<<<<<<< HEAD
 guessingGame();
 
 score(alert(`You got ${score} correct`));
 
-=======
-guessingSeven();
-// } guessingGame();
->>>>>>> 1b0f461a0fea6bcf7045ed8dd49556a88f59f12b
