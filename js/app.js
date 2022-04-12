@@ -2,7 +2,7 @@
 
 let score = 0;
 
-function guessingGame() {
+function guessingOne() {
   let siteVisitor = prompt('Hello. What is your name?');
 
   alert(`Welcome, ${siteVisitor}.\n\nTime for a fun facts quiz!\n\nPlease answer the following questions with Yes [Y/Yes] or No [N/No].`);
@@ -39,7 +39,7 @@ function guessingTwo() {
     alert('That was an invalid response!');
   }
 }
-// guessingTwo();
+guessingTwo();
 
 function guessingThree() {
   let questionThree = prompt('Do I ride dirtbikes and motorclyes?').toLowerCase();
@@ -56,7 +56,7 @@ function guessingThree() {
     alert('That was an invalid response!');
   }
 }
-// guessingThree();
+guessingThree();
 
 function guessingFour() {
   let questionFour = prompt('Have I put Vince McMahon in a headlock before?').toLowerCase();
@@ -73,7 +73,7 @@ function guessingFour() {
     alert('That was an invalid response!');
   }
 }
-// guessingFour();
+guessingFour();
 
 function guessingFive() {
   let questionFive = prompt('Do I have a lab full of minions under my house?').toLowerCase();
@@ -89,25 +89,31 @@ function guessingFive() {
     // console.log('That was an invalid response!')
     alert('That was an invalid response!');
   }
-  let myNumber = 14;
+}
+guessingFive();
 
-  for (let i = 0; i < 4; i++) {
-    let questionSix = parseInt(prompt('Guess a number I am thinking of'));
+let myNumber = 14;
 
-    if (questionSix === myNumber) {
-      // console.log('Incorrect!');
-      score++;
-      alert('You are correct!');
-      i = 4;
-    } else if (questionSix > myNumber) {
+for (let i = 0; i < 4; i++) {
+  let questionSix = parseInt(prompt('Guess a number I am thinking of'));
 
-      alert('Too high');
-    } else if (questionSix < myNumber) {
+  if (questionSix === myNumber) {
+    // console.log('Incorrect!');
+    score++;
+    alert('You are correct!');
+    i = 4;
+  } else if (questionSix > myNumber) {
 
-      alert('Too low');
-    }
+    alert('Too high');
+  } else if (questionSix < myNumber) {
+
+    alert('Too low');
   }
 }
+
+
+
+
 // guessingSix();
 
 function guessingSeven() {
@@ -135,7 +141,7 @@ function guessingSeven() {
   }
   alert(`Here are all my favorite colors: ${favColors}`);
 }
-guessingGame();
+guessingSeven();
 
 score(alert(`You got ${score} correct`));
 
