@@ -22,7 +22,7 @@ function guessingGame() {
     alert('That was an invalid response!');
   }
 }
-// guessingOne();
+guessingOne();
 
 function guessingTwo() {
   let questionTwo = prompt('Was I in the Army?').toLowerCase();
@@ -39,7 +39,7 @@ function guessingTwo() {
     alert('That was an invalid response!');
   }
 }
-guessingTwo();
+// guessingTwo();
 
 function guessingThree() {
   let questionThree = prompt('Do I ride dirtbikes and motorclyes?').toLowerCase();
@@ -56,7 +56,7 @@ function guessingThree() {
     alert('That was an invalid response!');
   }
 }
-guessingThree();
+// guessingThree();
 
 function guessingFour() {
   let questionFour = prompt('Have I put Vince McMahon in a headlock before?').toLowerCase();
@@ -73,7 +73,7 @@ function guessingFour() {
     alert('That was an invalid response!');
   }
 }
-guessingFour();
+// guessingFour();
 
 function guessingFive() {
   let questionFive = prompt('Do I have a lab full of minions under my house?').toLowerCase();
@@ -108,7 +108,7 @@ function guessingFive() {
     }
   }
 }
-guessingSix();
+// guessingSix();
 
 function guessingSeven() {
   let favColors = ['purple', 'black', 'grey', 'blue'];
